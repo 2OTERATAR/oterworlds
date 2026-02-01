@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OterWorlds — Твоя новая реальность</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <meta name="description" content="Приватный Minecraft сервер с уникальной атмосферой">
+    <link rel="icon" type="image/png" sizes="64x64" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/logo.png">
+    <link rel="apple-touch-icon" href="/logo.png">
+</head>
+<body class="relative">
+
+    <div class="glow-bg top-0 left-1/2 -translate-x-1/2"></div>
+    <div class="glow-bg bottom-0 right-0 opacity-50"></div>
+
+    <nav class="fixed w-full z-50 glass border-b border-white/5 top-0">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-bold text-xl tracking-tighter">Oter<span class="text-primary">Worlds</span></span>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-text-muted">
+                <a href="#roadmap" class="hover:text-white transition-colors">Планы</a>
+                <a href="#start" class="hover:text-white transition-colors">Начать</a>
+                <a href="#team" class="hover:text-white transition-colors">Команда</a>
+            </div>
+            <a href="https://discord.gg/nAxWgqpATV" target="_blank" class="bg-white/5 hover:bg-white/10 border border-white/10 px-4 py-2 rounded-full text-xs font-semibold transition-all">
+                Discord
+            </a>
+        </div>
+    </nav>
+
+    <header class="min-h-screen flex flex-col items-center justify-center text-center px-4 pt-16 relative overflow-hidden">
+        <div class="reveal relative z-10 flex flex-col items-center">
+            <div class="hero-logo mb-8 relative">
+                <div class="absolute inset-0 bg-primary/20 blur-3xl rounded-full"></div>
+                <img src="/logo.png" alt="OterWorlds Logo" class="w-48 h-48 md:w-64 md:h-64 object-contain relative z-10 animate-float drop-shadow-2xl">
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60 text-white">
+                Создавай.<br>Исследуй.
+            </h1>
+            <p class="text-text-muted text-lg md:text-xl max-w-xl mb-10">
+                Минимализм, производительность и свобода. Сервер, созданный с душой для тех, кто ценит качество.
+            </p>
+
+            <button id="copy-ip" class="group relative px-8 py-4 bg-surface border border-white/10 rounded-xl hover:border-primary/50 transition-all duration-300 overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/10 to-primary/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                <span id="ip-text" class="relative font-mono font-semibold text-lg tracking-wide group-hover:text-primary transition-colors text-white">
+                    play.oterworlds.ru
+                </span>
+            </button>
+            <div class="mt-4 text-xs text-text-muted opacity-60">Нажми, чтобы скопировать</div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-24 space-y-32">
+        
+        <section id="start" class="reveal">
+            <h2 class="text-3xl font-bold mb-12 text-center text-white">Быстрый старт</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="glass p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-4xl font-bold text-white/10 mb-4">01</div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Версия 1.20+</h3>
+                    <p class="text-text-muted text-sm">Скачай последнюю версию игры. Мы поддерживаем ванильную механику.</p>
+                </div>
+                <div class="glass p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 border-primary/20 bg-primary/5">
+                    <div class="text-4xl font-bold text-primary/20 mb-4">02</div>
+                    <h3 class="text-xl font-bold mb-2 text-white text-white">Подключение</h3>
+                    <p class="text-text-muted text-sm">Введи IP адрес в список серверов. Лицензия не обязательна.</p>
+                </div>
+                <div class="glass p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-4xl font-bold text-white/10 mb-4">03</div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Играй</h3>
+                    <p class="text-text-muted text-sm">Создай свой город, найди друзей и стань частью истории.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap" class="reveal">
+            <div class="flex items-center justify-between mb-12">
+                <h2 class="text-3xl font-bold text-white">Дорожная карта</h2>
+                <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-mono border border-primary/20">2026 Season</span>
+            </div>
+            <div class="relative border-l border-white/10 ml-4 md:ml-0 md:grid md:grid-cols-3 md:gap-8 md:border-l-0">
+                <div class="mb-10 ml-8 md:ml-0 relative text-left">
+                    <h3 class="text-lg font-bold text-green-400 mb-4 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_#22c55e]"></span> Реализовано
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="glass p-4 rounded-xl text-sm text-text-muted border-l-2 border-green-500/50">
+                            <span class="text-white block font-medium mb-1">Оптимизация ядра</span>
+                            Переход на Folia для стабильных 20 TPS.
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-10 ml-8 md:ml-0 relative text-left">
+                    <h3 class="text-lg font-bold text-primary mb-4 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-primary animate-pulse shadow-[0_0_8px_#6d28d9]"></span> В разработке
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="glass p-4 rounded-xl text-sm text-text-muted border-l-2 border-primary">
+                            <span class="text-white block font-medium mb-1 uppercase tracking-wider text-primary">Режим «Столбы»</span>
+                            Уникальная PvP/PvE механика сражений на высоте.
+                        </li>
+                    </ul>
+                </div>
+                <div class="ml-8 md:ml-0 relative text-left">
+                    <h3 class="text-lg font-bold text-white/60 mb-4 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-white/20"></span> Планы
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="glass p-4 rounded-xl text-sm text-text-muted opacity-60">
+                            <span class="text-white block font-medium mb-1 uppercase tracking-wider">Режим «Спидран»</span>
+                            Соревновательные забеги на время с ценными призами.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="reveal">
+            <h2 class="text-3xl font-bold mb-12 text-center text-white">Создатели</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                
+                <a href="https://t.me/oter993" target="_blank" class="group relative w-full md:w-64 h-80 rounded-2xl overflow-hidden cursor-pointer block">
+                    <div class="absolute inset-0 bg-surface"></div>
+                    <img src="/oter.png" alt="oter42" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-60 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent z-10">
+                         <div class="absolute bottom-8 left-0 right-0 text-center px-4">
+                             <h4 class="text-xl font-bold text-white group-hover:text-primary transition-colors">oter42</h4>
+                             <p class="text-[10px] text-primary font-mono mt-1 tracking-[0.2em] uppercase bg-primary/10 py-1 rounded-full border border-primary/20">Founder & Dev</p>
+                         </div>
+                    </div>
+                    <div class="absolute inset-0 border-2 border-white/5 group-hover:border-primary/50 transition-all duration-300 rounded-2xl z-20"></div>
+                </a>
+
+                <div class="group relative w-full md:w-64 h-80 rounded-2xl overflow-hidden block">
+                    <div class="absolute inset-0 bg-surface"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent z-10">
+                         <div class="absolute bottom-8 left-0 right-0 text-center px-4">
+                             <h4 class="text-xl font-bold text-white group-hover:text-primary transition-colors">AdminNick</h4>
+                             <p class="text-[10px] text-text-muted font-mono mt-1 tracking-[0.2em] uppercase bg-white/5 py-1 rounded-full border border-white/5">Community Manager</p>
+                         </div>
+                    </div>
+                    <div class="absolute inset-0 border-2 border-white/5 transition-all duration-300 rounded-2xl z-20"></div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-white/5 py-12 bg-black/40">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <span class="font-bold text-lg tracking-tighter text-white">Oter<span class="text-white/40">Worlds</span></span>
+                <p class="text-xs text-text-muted mt-2">© 2026. Not affiliated with Mojang AB.</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="text-sm text-text-muted hover:text-white transition-colors">Правила</a>
+                <a href="#" class="text-sm text-text-muted hover:text-white transition-colors">Донат</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>

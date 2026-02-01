@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-background text-text font-sans antialiased overflow-x-hidden;
+  /* Убираем стандартный скроллбар и делаем свой, тонкий */
+  scrollbar-width: thin;
+  scrollbar-color: #333 #050507;
+}
+
+/* Эффект свечения на фоне */
+.glow-bg {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(109, 40, 217, 0.15) 0%, rgba(5, 5, 7, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Стекло */
+.glass {
+  @apply bg-surface/40 backdrop-blur-md border border-white/5;
+}
+
+/* Анимация появления при скролле */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
